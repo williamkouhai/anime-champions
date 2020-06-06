@@ -1,0 +1,37 @@
+
+#div-body{ /*cor de fundo do body*/
+    background-color: rgb(149, 19, 189);
+
+}
+
+h1{ /*cor da letra */
+    color: rgb(219, 211, 211); 
+}
+
+form{
+    color: rgb(222, 220, 231);
+}
+
+#inputEmail{/*cor da letra - email */
+
+color: rgb(7, 7, 7);
+}
+
+#inputPassword{
+    color: rgb(192, 226, 43);
+}
+
+#sign{/*cor do botao - sing */
+    background-color: rgb(73, 70, 70);
+}
+
+                /*CSS - PAGINA LUTADORES */
+
+#h1{
+    color: #424ef1;
+  }
+
+   /*CSS - PAGINA DATATABLE */
+   
+  
+
