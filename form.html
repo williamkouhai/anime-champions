@@ -24,7 +24,7 @@
 
 <div class="card-body">
 
-<form action="votar_lutador.php" method="POST">
+  <form action="./votar_lutador.php" method="POST">
 <div class="form-row">
 <div id="nome" class="name">Nome do Lutador</div>
 <div class="value">
@@ -32,14 +32,7 @@
 </div>
 </div>
 
-<div class="form-row">
-<div class="name">Mês</div> 
-<div class="value">
-<div class="input-group">
-  <input class="input--style-6" type="text" name="mes" min="0" max="10" autocomplete="off" required> 
-</div>
-</div>
-</div>
+
 
 <div class="form-row">
   <div class="name">Nota</div> 
@@ -50,22 +43,21 @@
   </div>
   </div>
 
-<div class="form-row">
-<div class="name">Imagem do Lutador</div>
-<div class="value">
-<div class="input-group js-input-file">
-<input class="input-file" type="file" name="file" autocomplete="off" required>
-<label class="label--file" for="file">Choose file</label>
-<span class="input-file__info">No file chosen</span>
-</div>
-<div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
-</div>
-</div>
-
+  <div class="form-row">
+    <div class="name">Semestre</div> 
+    <div class="value">
+    <div class="input-group">
+      <input class="input--style-6" type="number" name="mes" min="1" max="2" autocomplete="off" required> 
+    </div>
+    </div>
+    </div>
+    
 </div>
 <div class="card-footer">
 <button class="btn btn--radius-2 btn--blue-2" type="submit" name="submit">Votar</button>
+
 </form>
+
 </div>
 </div>
 </div>

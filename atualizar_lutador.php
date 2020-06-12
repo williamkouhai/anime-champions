@@ -1,20 +1,18 @@
-<!--CREATE-->
+<!--UPDATE-->
+<!--POST do editar_lutador-->
 <?php
+ include 'conexao.php';
 
-include 'conexao.php';
-//cadastrar dados do form - post
-
-$nome = $_POST['nome']; //recebe valor do atributo
+$id = $_POST['id'];  //pegando ID para edição
+$nome = $_POST['nome'];
 $nota = $_POST['nota'];
 $mes = $_POST['mes'];
 
-//$file = $_POST['file'];
+    $sql = "UPDATE `lutadores` SET `nome`='$nome',`nota`=$nota,`mes`='$mes' WHERE id=$id";
+    $atualizar = mysqli_query($conexao,$sql);
 
-$sql = "INSERT INTO `lutadores`( `nome`, `nota`, `mes`) VALUES ('$nome',$nota,'$mes')";  //inserir dados no banco
 
-$inserir = mysqli_query($conexao,$sql);  //inserir a conexao
 ?>
-
 <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -30,7 +28,7 @@ $inserir = mysqli_query($conexao,$sql);  //inserir a conexao
         <div class="card" style="width: 18rem;">
         <img src="https://uploads.mixer.com/avatar/2evg7cnb-101052282.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <p class="card-text">Lutador Adicionado!</p>
+            <p class="card-text">Lutador Atualizado!</p>
         </div>   
         <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">index</a>
         <a href="form.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Form</a>
@@ -43,6 +41,3 @@ $inserir = mysqli_query($conexao,$sql);  //inserir a conexao
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-        

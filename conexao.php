@@ -5,6 +5,6 @@
     $password = "";
 
     //creando conexao
-        $conexao = mysqli_connect($servername,$username,$password,$database});
+        $conexao = mysqli_connect($servername, $username, $password, $database);
 
 ?>
