@@ -45,14 +45,14 @@
   </head>
 
     <body class="text-center" id="div-body">
-      <form class="form-signin" action="">
+      <form class="form-signin" action="login.php" method="POST">
 
     <img class="mb-4" src="./login_files/Man_long_katana.png" alt="" width="300" height="300"> <!---img -->
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail" class="sr-only" name="email" >Email address</label>  <!--- name="email" -->
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address"  autocomplete="off">
-    <label for="inputPassword" class="sr-only" name="senha" >Password</label>  <!--- name="senha" -->
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" rautocomplete="off">
+    <label for="inputEmail" class="sr-only">Email</label>  <!--- name="email" -->
+    <input type="email" id="email" name="email" class="form-control" placeholder="Email" autocomplete="off" required>
+    <label for="inputPassword" class="sr-only" name ="senha">Senha</label>  <!--- name="senha" -->
+    <input type="password"  id="senha" name="senha" class="form-control" placeholder="Senha" rautocomplete="off" required>
     <div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Remember me

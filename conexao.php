@@ -1,10 +1,10 @@
 <?php
-    $servername = "localhost"; //padrao server local
-    $database = "thechampion"; //nome do banco
+    $servhost = "localhost"; //padrao server local
+    //$database = "thechampion"; //nome do banco
     $username="root";
     $password = "";
-
-    //creando conexao
-        $conexao = mysqli_connect($servername, $username, $password, $database);
+    $database = "thechampion";
+    //criando conexao
+    $conexao = new mysqli($servhost, $username, $password, $database);
 
 ?>

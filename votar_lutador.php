@@ -10,9 +10,9 @@ $mes = $_POST['mes'];
 
 //$file = $_POST['file'];
 
-$sql = "INSERT INTO `lutadores`( `nome`, `nota`, `mes`) VALUES ('$nome',$nota,'$mes')";  //inserir dados no banco
+$sql = "INSERT INTO `lutadores`( `nome`, `nota`, `mes`) VALUES ('$nome','$nota','$mes')";  //inserir dados no banco
+$results = $conexao->query($sql);
 
-$inserir = mysqli_query($conexao,$sql);  //inserir a conexao
 ?>
 
 <!-- CSS only -->
