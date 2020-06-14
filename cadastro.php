@@ -30,8 +30,8 @@ $results = $conexao->query($sql);
         <div class="card-body">
             <p class="card-text">Conta criada!</p>
         </div>   
-        <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">index</a>
-        <a href="form.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Form</a>
+        <a href="index.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">index</a>
+        <a href="form.php" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Form</a>
             </div>
  </div>
 

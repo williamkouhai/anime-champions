@@ -1,5 +1,7 @@
-<!--UPDATE-->
-<!--POST do editar_lutador-->
+<?php//CONTROLE DE SESSÃO PRA VER SE ESTÁ LOGADO
+session_start();
+include 'verificar_login.php';
+?>
 <?php
  include 'conexao.php';
 
